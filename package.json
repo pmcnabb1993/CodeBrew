@@ -1,0 +1,8 @@
+{
+  "name": "CodeBrew",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:pmcnabb1993/CodeBrew.git",
+  "author": "Preston McNabb",
+  "license": "MIT"
+}
