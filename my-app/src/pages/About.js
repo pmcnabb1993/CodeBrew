@@ -6,9 +6,9 @@ import Col from "../components/Col";
 
 const About = () => (
   <div>
-    <Hero backgroundImage="https://i.imgur.com/qkdpN.jpg">
-      <h1>Pupster</h1>
-      <h2>They're the Good Boys and Girls</h2>
+    <Hero backgroundImage="https://images.unsplash.com/photo-1521342475957-8db764a86913?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae19afb005f9f45df7170938bc3a661a&auto=format&fit=crop&w=2851&q=80">
+      <h1> Code '&' Brew </h1>
+      <h2>We help with all your coding needs.</h2>
     </Hero>
     <Container style={{ marginTop: 30 }}>
       <Row>
