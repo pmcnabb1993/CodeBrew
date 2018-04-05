@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "git@github.com:pmcnabb1993/CodeBrew.git",
   "author": "Preston McNabb",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
+  }
 }
