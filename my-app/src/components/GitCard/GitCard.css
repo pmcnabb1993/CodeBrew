@@ -1,15 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
- * {
-	 box-sizing: border-box;
-}
- body {
-	 margin-top: 2rem;
-	 font-family: 'Lato', sans-serif;
-	 background: #f2f2f2;
-	 color: #fff;
-	 -webkit-font-smoothing: antialiased;
-	 font-size: 1.1rem;
-}
+
  .searchbox {
 	 max-width: 20rem;
 	 margin: 1rem auto;
