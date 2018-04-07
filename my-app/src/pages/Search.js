@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import API from "../utils/API";
+import ReactDOM from 'react-dom';
 import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
 import SearchResults from "../components/SearchResults";
 import Alert from "../components/Alert";
+import GitCard from "../components/GitCard";
 
 class Search extends Component {
   state = {
@@ -51,6 +53,7 @@ class Search extends Component {
           breeds={this.state.breeds}
         />
         <SearchResults results={this.state.results} />
+        <GitCard />
       </Container>
     );
   }

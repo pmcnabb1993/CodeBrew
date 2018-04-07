@@ -1,36 +1,45 @@
-nav.navbar.navbar-inverse {
+nav.navbar.navbar-default {
   margin-bottom: 0;
   font-family: 'BioRhyme', serif;
-  background-color: #222;
-  height: 75px;
+  font-size: 17px;
+  height: 80px;
+  
+  background:  #f2f2f2 !important;
+  border-color: #f2f2f2 !important;
   
 }
+
 
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 10px;
+  margin-top: 20px;
+  
 }
 
-.navbar-inverse .navbar-brand {
-  color: #f8f8f8;
+.navbar-default .navbar-brand {
+  color: #222;
+  font-size: 24px;
 }
 
-.navbar-inverse .navbar-nav>li>a {
-  color: #f8f8f8;
+.navbar-default .navbar-nav>li>a {
+  color: #222;
+  float: right;
 }
 
 button[type="submit"] {
   float: right;
-  margin-top: 10px;
   text-decoration: none;
-  color: #f8f8f8;
+  border-color: #f2f2f2 !important;
+  background: #f2f2f2 !important;
+  margin-top: 12px;
   
 }
+
 a {
-  color: #f8f8f8;
+  color: #222;
   text-decoration: none;
 }
 
