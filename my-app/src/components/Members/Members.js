@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ReactDOM from "react-dom";
-import "./GitCard.css";
+import "./Members.css";
 
-const Component = React.Component
 
-class GitCard extends Component {
+  const Component = React.Component
+
+class Members extends Component {
   constructor(props) {
     super(props)
     
@@ -54,15 +55,16 @@ class GitCard extends Component {
   }
   
   fetchUser(username) {
-    let url = `https://api.github.com/users/${username}`
+    let url = `https://api.github.com/users/pmcnabb1993/following`
     this.fetchApi(url)
+
+    console.log(url)
   }
   
   componentDidMount() {
-    let url = `https://api.github.com/users/${this.state.username}`
+    let url = `https://api.github.com/users/pmcnabb1993/following`
     this.fetchApi(url)
-
-    
+    console.log(url)
   }
 }
 
@@ -135,5 +137,6 @@ class Card extends Component {
   }
 }
 
-export default GitCard;
+export default Members;
+
 

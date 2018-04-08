@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import API from "../utils/API";
 import Card from "../components/Card";
 import Alert from "../components/Alert";
+import Members from "../components/Members";
 
-class Discover extends Component {
+class Coffee extends Component {
   state = {
     image: "",
     match: false,
@@ -63,9 +64,10 @@ class Discover extends Component {
         <Alert style={{ opacity: this.state.match ? 1 : 0 }} type="success">
           Yay! That Pup Liked You Too!!!
         </Alert>
+        <Members />
       </div>
     );
   }
 }
 
-export default Discover;
+export default Coffee;
