@@ -17,20 +17,20 @@
 	 padding: 1rem 2rem;
 	 border: none;
 	 margin: 1rem 0 0 0;
-	 background: #11e7ff;
-	 color: #006b77;
+	 background: #ffffff;
+	 color: #ffffff;
 	 font-weight: 700;
 	 border-radius: 0.4rem;
 }
  .searchbox__button:hover {
-	 background: #00def6;
+	 background: #da0000;
 }
  .card {
 	 position: relative;
-	 background: #00b0c3;
+	 background: #ffffff;
 	 max-width: 20rem;
 	 margin: 7rem auto 2rem;
-	 border: solid 5px #09a;
+	 border: solid 5px rgb(255, 255, 255);
 	 border-radius: 0.4rem;
 	 padding: 5.5rem 2.5rem 1rem;
 }

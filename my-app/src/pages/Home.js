@@ -4,7 +4,7 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 
-const About = () => (
+const Home = () => (
   <div>
     <Hero backgroundImage="https://images.unsplash.com/photo-1521342475957-8db764a86913?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae19afb005f9f45df7170938bc3a661a&auto=format&fit=crop&w=2851&q=80">
       <h1> Code '&' Brew </h1>
@@ -58,4 +58,4 @@ const About = () => (
   </div>
 );
 
-export default About;
+export default Home;

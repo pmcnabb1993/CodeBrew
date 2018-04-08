@@ -14,3 +14,9 @@ div[data-reactroot] {
 body {
 	background-color: #f2f2f2;
 }
+
+h1 {
+ color: #ff003c !important;
+ margin-bottom: 2rem;
+
+}
