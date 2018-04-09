@@ -1,9 +1,8 @@
 nav.navbar.navbar-default {
   margin-bottom: 0;
   font-family: 'BioRhyme', serif;
-  font-size: 17px;
+  font-size: 18px;
   height: 80px;
-  
   background:  #f2f2f2 !important;
   border-color: #f2f2f2 !important;
   
@@ -11,17 +10,19 @@ nav.navbar.navbar-default {
 
 
 .container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 55px;
+  padding-left: 55px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 20px;
+  margin-top: 18px;
   
 }
 
 .navbar-default .navbar-brand {
   color: #222;
-  font-size: 24px;
+  font-size: 25px;
+  padding-top: 11px;
+  float: left;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -41,11 +42,36 @@ button[type="submit"] {
 a {
   color: #222;
   text-decoration: none;
+  float: right;
+  padding-right: 10px;
+  padding-left: 12px;
+  padding-top: 12px;
+}
+a:hover {
+  color: #ef483e;
 }
 
 .btn-info {
   background-repeat: none;
   border-color: #5bc0de;
   background-image: linear-gradient(to bottom,#5bc0de 0,#5bc0de 100%);
+}
+body {
+  background-color: #f2f2f2;
+}
+
+h1 {
+ color: #ef483e !important;
+ margin-bottom: 2rem;
+ font-family: 'BioRhyme', serif;
+
+}
+p {
+  font-family: Space Mono,Courier,monospace;
+
+}
+h2,
+h3 {
+  font-family: Space Mono,Courier,monospace;
 }
 

@@ -6,6 +6,8 @@ import Code from "./pages/Code";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
+import { Card, Button, CardImg, CardTitle, CardText, CardColumns,
+  CardSubtitle, CardBody } from 'reactstrap';
 
 const App = () => (
   <Router>
@@ -17,6 +19,7 @@ const App = () => (
         <Route exact path="/coffee" component={Coffee} />
         <Route exact path="/code" component={Code} />
       </Wrapper>
+
       <Footer />
     </div>
   </Router>

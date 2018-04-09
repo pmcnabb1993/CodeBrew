@@ -16,7 +16,16 @@ body {
 }
 
 h1 {
- color: #ff003c !important;
+ color: #ef483e !important;
  margin-bottom: 2rem;
+ font-family: 'BioRhyme', serif;
 
+}
+p {
+	font-family: Space Mono,Courier,monospace;
+
+}
+h2,
+h3 {
+	font-family: Space Mono,Courier,monospace;
 }

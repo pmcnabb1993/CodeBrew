@@ -1,6 +1,6 @@
 import React from "react";
 import CardBtn from "../CardBtn";
-import "./Card.css";
+import  styles from "./Card.css";
 
 const Card = props => (
   <div
