@@ -9,7 +9,7 @@
 	 box-shadow: none;
 	 border: none;
 	 padding: 0 1rem;
-	 color: #003d44;
+	 color: #000000;
 	 border-radius: 0.2rem;
 }
  .searchbox__button {
@@ -17,13 +17,13 @@
 	 padding: 1rem 2rem;
 	 border: none;
 	 margin: 1rem 0 0 0;
-	 background: #ffffff;
+	 background: #222;
 	 color: #ffffff;
 	 font-weight: 700;
 	 border-radius: 0.4rem;
 }
  .searchbox__button:hover {
-	 background: #da0000;
+	 background: rgb(61, 61, 61);
 }
  .card {
 	 position: relative;
@@ -45,13 +45,13 @@
 	 margin: 0 auto;
 	 display: block;
 	 border-radius: 50%;
-	 background: #09a;
+	 background: #ef483e;
 	 padding: 5px;
 	 max-width: 100%;
 	 transition: 0.2s;
 }
  .card__avatar:hover {
-	 background: #008290;
+	 background: #e67e78;
 }
  .card__username {
 	 font-size: 2rem;
@@ -60,11 +60,12 @@
 	 margin: 1rem auto;
 }
  .card__link {
-	 color: #fff;
+	 color: #222;
 	 border-bottom: solid 2px #fff;
 	 text-decoration: none;
 	 margin-bottom: 0;
 	 padding-bottom: 0;
+	 text-align: center;
 }
  .card__link:hover {
 	 opacity: 0.8;
