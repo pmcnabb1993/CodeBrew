@@ -108,7 +108,7 @@ class Card extends Component {
     } else {
       // if username found, then...
       return (
-        <div className="card">
+        <div className="card2">
           <a href={data.url} target="_blank">
             <img className="card__avatar" src={data.avatar} />             
           </a>
