@@ -1,6 +1,17 @@
-import React, { Component } from 'react';
-import { Navbar, Button } from 'react-bootstrap';
-import './App.css';
+import React, { Component } from "react";
+import auth0 from 'auth0-js';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Log from "./pages/Log";
+import Coffee from "./pages/Coffee";
+import Home from "./pages/Main";
+import Code from "./pages/Code";
+import Navbar2 from "./components/Navbar2";
+import Footer from "./components/Footer";
+import Wrapper from "./components/Wrapper";
+import { Card, Button, CardImg, CardTitle, CardText, CardColumns,
+  CardSubtitle, CardBody, Navbar } from 'reactstrap';
+import Auth from './Auth/Auth.js';
+import Callback from './Callback/Callback';
 
 class App extends Component {
   goTo(route) {
