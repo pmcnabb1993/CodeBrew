@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
-import ListApp from "../components/ListApp";
+
 
 const Home = () => (
   <div>
@@ -19,7 +19,7 @@ const Home = () => (
       </Row>
       <Row>
         <Col size="md-12">
-          <ListApp />
+         
           <p>
             Phasellus at rutrum nisl. Praesent sed massa ut ipsum bibendum porttitor. Sed malesuada
             molestie velit ac viverra. Quisque a ullamcorper purus. Curabitur luctus mi ac mi
