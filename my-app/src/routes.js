@@ -3,11 +3,14 @@ import { Redirect, Route, Router } from 'react-router-dom';
 import App from './App';
 import Home from './Home/Home';
 import Profile from './Profile/Profile';
-import Ping from './Ping/Ping';
+import LoginPage from './LoginPage/LoginPage';
+import Coffee from './Pages/Coffee';
+import Code from './Pages/Code';
 import Admin from './Admin/Admin';
 import Callback from './Callback/Callback';
 import Auth from './Auth/Auth';
 import history from './history';
+import Ping from './Ping/Ping';
 
 const auth = new Auth();
 
@@ -23,23 +26,42 @@ export const makeMainRoutes = () => {
         <div>
           <Route path="/" render={(props) => <App auth={auth} {...props} />} />
           <Route path="/home" render={(props) => <Home auth={auth} {...props} />} />
+
           <Route path="/profile" render={(props) => (
             !auth.isAuthenticated() ? (
-              <Redirect to="/home"/>
+              <Redirect to="/login"/>
             ) : (
               <Profile auth={auth} {...props} />
             )
           )} />
-          <Route path="/ping" render={(props) => (
+
+          <Route path="/coffee" render={(props) => (
             !auth.isAuthenticated() ? (
-              <Redirect to="/home"/>
+              <Redirect to="/login"/>
+            ) : (
+              <Coffee auth={auth} {...props} />
+            )
+          )} />
+
+          <Route path="/code" render={(props) => (
+            !auth.isAuthenticated() ? (
+              <Redirect to="/login"/>
+            ) : (
+              <Code auth={auth} {...props} />
+            )
+          )} />
+
+          <Route path="/home" render={(props) => (
+            !auth.isAuthenticated() ? (
+              <Redirect to="/login"/>
             ) : (
               <Ping auth={auth} {...props} />
             )
           )} />
+          
           <Route path="/admin" render={(props) => (
             !auth.isAuthenticated() || !auth.userHasScopes(['write:messages']) ? (
-              <Redirect to="/home"/>
+              <Redirect to="/login"/>
             ) : (
               <Admin auth={auth} {...props} />
             )

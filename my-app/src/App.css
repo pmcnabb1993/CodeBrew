@@ -1,3 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+div[data-reactroot] {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f2f2f2 !important;
+}
+
+h1 {
+ color: #ef483e !important;
+ margin-bottom: 2rem;
+ font-family: 'BioRhyme', serif;
+
+}
+p {
+  font-family: Space Mono,Courier,monospace;
+
+}
+h2,
+h3 {
+  font-family: Space Mono,Courier,monospace;
+}
+
+
+.navbar {
+  font-family: 'BioRhyme', serif;
+  font-size: 24px;
+  height: 80px;
+  background:  #f2f2f2 !important;
+  border-color: #f2f2f2 !important;
+  padding-top: 5px;
+  
+  margin-left: 10px !important;
+}
+
+.navbar-brand {
+  color: #222;
+  font-size: 30px !important;
+  padding-top: 22px !important;
+  float: left !important;
+  margin-right: 30px;
+  
+}
+
+.navbar-nav {
+  margin-top: 6px;
+  margin-bottom: 10px;
+  margin-right: 30px;
+}
+
+.navbar-right {
+  margin-top: 4px !important;
+}
+.btn-link {
+  color: #222;
+  text-decoration: none;
+  float: right;
+  padding-right: 10px;
+  padding-left: 12px;
+  padding-top: 24px !important;
+  font-size: 16px !important;
+}
+
+.btn-link:hover {
+    color: #ef483e !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+
+}
 
 .App-logo {
   height: 25px;
