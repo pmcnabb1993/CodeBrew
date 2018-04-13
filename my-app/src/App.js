@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Navbar, Button } from 'react-bootstrap';
+import { Navbar, Button, Nav, NavItem } from 'react-bootstrap';
 import './App.css';
+import Coffee from './Pages/Coffee';
 
 class App extends Component {
   goTo(route) {
@@ -23,30 +24,12 @@ class App extends Component {
         <Navbar fluid>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#">Auth0 - React</a>
+              <a href="/home">Code&Brew</a>
             </Navbar.Brand>
-            <Button
-              bsStyle="primary"
-              className="btn-margin"
-              onClick={this.goTo.bind(this, 'home')}
-            >
-              Home
-            </Button>
-            {
-              !isAuthenticated() && (
-                  <Button
-                    bsStyle="primary"
-                    className="btn-margin"
-                    onClick={this.login.bind(this)}
-                  >
-                    Log In
-                  </Button>
-                )
-            }
             {
               isAuthenticated() && (
                   <Button
-                    bsStyle="primary"
+                    bsStyle="link"
                     className="btn-margin"
                     onClick={this.goTo.bind(this, 'profile')}
                   >
@@ -57,22 +40,47 @@ class App extends Component {
             {
               isAuthenticated() && (
                   <Button
-                    bsStyle="primary"
+                    bsStyle="link"
                     className="btn-margin"
-                    onClick={this.goTo.bind(this, 'ping')}
+                    onClick={this.goTo.bind(this, 'coffee')}
                   >
-                    Ping
+                    Coffee
+                  </Button>
+                )
+            }
+            {
+              isAuthenticated() && (
+                  <Button
+                    bsStyle="link"
+                    className="btn-margin"
+                    onClick={this.goTo.bind(this, 'code')}
+                  >
+                    Code
                   </Button>
                 )
             }
             {
               isAuthenticated() &&  userHasScopes(['write:messages']) && (
                   <Button
-                    bsStyle="primary"
-                    className="btn-margin"
+                    bsStyle="primary "
+                    className="btn-margin hover"
                     onClick={this.goTo.bind(this, 'admin')}
                   >
                     Admin
+                  </Button>
+                )
+            }
+            </Navbar.Header>
+            <Nav pullRight>
+            <NavItem>
+            {
+              !isAuthenticated() && (
+                  <Button
+                    bsStyle="primary"
+                    className="pull-right"
+                    onClick={this.login.bind(this)}
+                  >
+                    Log In
                   </Button>
                 )
             }
@@ -80,14 +88,15 @@ class App extends Component {
               isAuthenticated() && (
                   <Button
                     bsStyle="primary"
-                    className="btn-margin"
+                    className="pull-right"
                     onClick={this.logout.bind(this)}
                   >
                     Log Out
                   </Button>
                 )
             }
-          </Navbar.Header>
+              </NavItem>
+            </Nav>
         </Navbar>
       </div>
     );
