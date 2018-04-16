@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import { Row, Col } from 'react-bootstrap';
 import Hero from "../components/Hero";
 import Container from "../components/Container";
-import Row from "../components/Row";
-import Col from "../components/Col";
 import Weather from "../components/Weather";
+import { Button } from 'reactstrap';
+import Card from "../components/Card";
 
 
 class Home extends Component {
@@ -11,7 +12,15 @@ class Home extends Component {
     const { isAuthenticated, login } = this.props.auth;
     return (
       <div>
+      <Row>
+      <Col xs={6} md={4}>
+      </Col>
+      <Col xs={6} md={4}>
+      </Col>
+      <Col xs={6} md={4}>
       <Weather />
+      </Col>
+      </Row>
       <Hero backgroundImage="https://images.unsplash.com/photo-1521342475957-8db764a86913?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae19afb005f9f45df7170938bc3a661a&auto=format&fit=crop&w=2851&q=80">
         <h1> Code '&' Brew </h1>
         <h2>We help with all your coding needs.</h2>
