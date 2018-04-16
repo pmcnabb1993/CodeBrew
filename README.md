@@ -22,8 +22,7 @@ CodeBrew is an application to help the coding student. One part helps you find t
 * Express.js
 * React-Bootstrap
 * React.js
-* 1
-* 2
+* Moment.js 
 * 3
 * Heroku
 
@@ -34,6 +33,8 @@ CodeBrew is an application to help the coding student. One part helps you find t
 * Body-parser
 * Express-handlebars
 * mysql
+* React-Open-Weather
+* Moment
 
 ## API Reference
 
