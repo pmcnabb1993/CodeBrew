@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Carousel, CarouselItem, CarouselCaption } from 'react-bootstrap';
 import Hero from "../components/Hero";
 import Container from "../components/Container";
 import Weather from "../components/Weather";
 import { Button } from 'reactstrap';
 import Card from "../components/Card";
+import ControlledCarousel from "../components/ControlledCarousel";
+import Wrapper from "../components/Wrapper";
 
 
 class Home extends Component {
   render() {
     const { isAuthenticated, login } = this.props.auth;
     return (
-      <div>
-      <Hero backgroundImage="https://images.unsplash.com/photo-1521342475957-8db764a86913?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae19afb005f9f45df7170938bc3a661a&auto=format&fit=crop&w=2851&q=80">
-        <h1> Code '&' Brew </h1>
-        <h2>We help with all your coding needs.</h2>
-      </Hero>
+      <Wrapper>
+      <ControlledCarousel />
       <Container style={{ marginTop: 30 }}>
       <Row>
         <Col size="md-12">
@@ -48,7 +47,7 @@ class Home extends Component {
         </Col>
       </Row>
     </Container>
-  </div>
+  </Wrapper>
 );
   }
 }
