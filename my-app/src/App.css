@@ -23,7 +23,7 @@ body {
 .hero {
   margin-left: 5rem !important;
   margin-right: 5rem !important;
-  margin-top: 1rem !important;
+  margin-top: 2rem !important;
 }
 h1 {
  color: #ef483e !important;
@@ -50,9 +50,14 @@ h3 {
   padding-top: 5px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 10px !important;
+  margin-left: 5px;
   width: 100% !important;
 }
 
+.navbar-header {
+  margin-left: 5px !important;
+}
 .navbar-brand {
   color: #222;
   font-size: 30px !important;
@@ -64,12 +69,15 @@ h3 {
 
 .navbar-nav {
   margin-top: 6px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   margin-right: 30px;
 }
 
 .navbar-right {
   margin-top: 4px !important;
+
+  transform: translate( 0px,-90px);
+    -webkit-transform: translate(0px,-90px); /** Chrome & Safari **/
 }
 .btn-link {
   color: #222;

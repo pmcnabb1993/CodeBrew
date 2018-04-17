@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Navbar, Button, Nav, NavItem } from 'react-bootstrap';
 import './App.css';
 import Coffee from './Pages/Coffee';
+import Weather from "./components/Weather";
 
 class App extends Component {
   goTo(route) {
@@ -71,12 +72,15 @@ class App extends Component {
                 )
             }
             </Navbar.Header>
+            
+            <Weather />
+            
             <Nav pullRight>
             <NavItem>
             {
               !isAuthenticated() && (
                   <Button
-                    bsStyle="primary"
+                    bsStyle="link"
                     className="pull-right"
                     onClick={this.login.bind(this)}
                   >
@@ -87,7 +91,7 @@ class App extends Component {
             {
               isAuthenticated() && (
                   <Button
-                    bsStyle="primary"
+                    bsStyle="link"
                     className="pull-right"
                     onClick={this.logout.bind(this)}
                   >
