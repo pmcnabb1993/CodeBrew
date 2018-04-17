@@ -1,7 +1,14 @@
-.profile-area img {
-  max-width: 150px;
+.profile-area  {
+  max-width: 300px;
   margin-bottom: 20px;
   margin-left: 5rem;
+  font-family: Space Mono,Courier,monospace !important;
+  align-content: center;
+}
+
+h3 {
+	color: #ef483e;
+	font-size: 20px;
 }
 
 .panel-body h3 {
@@ -11,3 +18,30 @@
 	margin-left: 5rem;
 	font-family: Space Mono,Courier,monospace !important;
 }
+
+.profilecard {
+	 position: absolute;
+	 transform: translate(-120px,0);
+     -webkit-transform: translate(-120px,0); /** Chrome & Safari **/
+	 margin: 5px;
+	 left: 50%;
+	 width: 12rem;
+	 height: auto;
+	 text-align: center;
+	 margin-top: 10px;
+	 display: block;
+	 border-radius: 50%;
+	 background: #ef483e;
+	 padding: 3px;
+	 max-width: 100%;
+	 transition: 0.2s;
+}
+.cardmain {
+	width: 100%;
+	height: 140px;
+	background: linear-gradient(to bottom right, #595959, #666666);
+	display: flex;
+	border-radius: 7px 7px 7px 7px;
+	margin-left: 5rem;
+}
+
