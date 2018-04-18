@@ -4,6 +4,7 @@ import './App.css';
 import Coffee from './Pages/Coffee';
 import Weather from "./components/Weather";
 
+
 class App extends Component {
   goTo(route) {
     this.props.history.replace(`/${route}`)
