@@ -1,24 +1,36 @@
 .carousel {
     
     width: 100% !important;
-    height: 500px !important;
-    display: block;
-   
-  
+    height: 575px !important;
+    display: block;  
+}
+
+.carousel-caption {
+    color: #ffff;
+    transform: translate( 0px, -460px);
+    -webkit-transform: translate(0px, -460px); /** Chrome & Safari **/
+    -moz-transform: translate(0px, -460px); /** Firefox **/
     
 }
+
+.carousel-caption h1 {
+    font-size: 55px;
+    color: #fff !important;
+    font-family: 'BioRhyme', serif !important;
+}
+
+.carousel-caption h3 {
+    color: #fff !important;
+}
+
 .carousel-inner {
     display: block;
     width: 100% !important;
-    height: 500px !important;
+    height: 575px !important;
     overflow: hidden !important;
-    opacity: .9;
-    transform: translate( 0px,-54px);
-    -webkit-transform: translate(0px,-54px); /** Chrome & Safari **/
+    opacity: .7;
+    transform: translate( 0px,-45px);
+    -webkit-transform: translate(0px,-45px); /** Chrome & Safari **/
+    -moz-transform: translate(0px,-45px); /** Firefox **/
 }
 
-img{
-    transform: translate( 0px,-175px);
-    -webkit-transform: translate(0px,-175px); /** Chrome & Safari **/
-
-}

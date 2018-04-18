@@ -57,13 +57,7 @@ export const makeMainRoutes = () => {
             )
           )} />
 
-          <Route path="/home" render={(props) => (
-            !auth.isAuthenticated() ? (
-              <Redirect to="/login"/>
-            ) : (
-              <Ping auth={auth} {...props} />
-            )
-          )} />
+          
           
           <Route path="/admin" render={(props) => (
             !auth.isAuthenticated() || !auth.userHasScopes(['write:messages']) ? (
