@@ -2,10 +2,18 @@ import React, { Component } from 'react';
 import { Navbar, Button, Nav, NavItem } from 'react-bootstrap';
 import './App.css';
 import Coffee from './Pages/Coffee';
-import Weather from "./components/Weather";
+import Weather from "./components/Weather"; 
+import base from './base';
+import AddShopForm from "./components/AddShopForm/AddShopForm";
 
 
 class App extends Component {
+
+  state = {
+    coffeeshops: {}
+  };
+
+  
   goTo(route) {
     this.props.history.replace(`/${route}`)
   }
