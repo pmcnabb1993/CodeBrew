@@ -1,5 +1,5 @@
 import ReactWeather from 'react-open-weather';
-import 'react-open-weather/lib/css/ReactWeather.css';
+//import 'react-open-weather/lib/css/ReactWeather.css';//
 import React from "react";
 import ReactDOM from "react-dom";
 import styles from "./Weather.css";
