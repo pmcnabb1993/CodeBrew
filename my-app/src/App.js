@@ -4,16 +4,22 @@ import './App.css';
 import Coffee from './Pages/Coffee';
 import Weather from "./components/Weather"; 
 import base from './base';
-import AddShopForm from "./components/AddShopForm/AddShopForm";
+import Card from "./components/Card";
+import Alert from "./components/Alert";
+import Members from "./components/Members";
+import CardCoffee from "./components/CardCoffee";
+import PropTypes from "prop-types";
+import samplecoffee from "./sample-coffee";
+import Shop from "./components/Shop";
+import AddShopForm from "./components/AddShopForm";
+import EditShopForm from "./components/EditShopForm";
+import Inventory from "./components/Inventory";
 
 
-class App extends Component {
 
-  state = {
-    coffeeshops: {}
-  };
+class App extends React.Component {
 
-  
+
   goTo(route) {
     this.props.history.replace(`/${route}`)
   }
@@ -80,10 +86,12 @@ class App extends Component {
                   </Button>
                 )
             }
+            {
+              isAuthenticated() && (
+                  <Weather />
+                )
+            }
             </Navbar.Header>
-            
-            <Weather />
-            
             <Nav pullRight>
             <NavItem>
             {

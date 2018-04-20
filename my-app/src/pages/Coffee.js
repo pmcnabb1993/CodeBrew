@@ -5,16 +5,17 @@ import Alert from "../components/Alert";
 import Members from "../components/Members";
 import CardCoffee from "../components/CardCoffee";
 import PropTypes from "prop-types";
-import samplecoffee from "../samplecoffee";
-import Shop from "../components/Shop/Shop";
+import samplecoffee from "../sample-coffee";
+import Shop from "../components/Shop";
 import base from "../base";
-import AddShopForm from "../components/AddShopForm/AddShopForm";
+import AddShopForm from "../components/AddShopForm";
+import EditShopForm from "../components/EditShopForm";
+import Inventory from "../components/Inventory";
 
-class Coffee extends React.Component {
-    state = {
-      coffeeshops: {}
-    };
-  
+class Coffee extends Component {
+  componentWillMount() {
+    this.setState({ coffeeshops: {samplecoffee} });
+  }
     static propTypes = {
       match: PropTypes.object
     };
@@ -67,7 +68,7 @@ class Coffee extends React.Component {
   
     loadSamplecoffeeshops = () => {
       this.setState({ coffeeshops: samplecoffee });
-      console.log(this.loadSamplecoffeeshops);
+      
     };
   
   
@@ -86,10 +87,10 @@ class Coffee extends React.Component {
               ))}
             </ul>
           </div>
-          <AddShopForm />
-          <button onClick={this.props.loadSamplecoffeeshops}>
-            Load Coffee Shops
-          </button>
+          <Inventory
+          addShop={this.addShop}
+          loadSamplecoffeeshops={this.loadSamplecoffeeshops}
+           />
           <div>
           <CardCoffee />
         </div>
@@ -99,6 +100,10 @@ class Coffee extends React.Component {
   }
   
   export default Coffee;
+  
+            
+            
+        
   
 
 

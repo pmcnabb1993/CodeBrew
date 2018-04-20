@@ -84,9 +84,9 @@ h3 {
 
 .navbar-right {
   margin-top: 4px !important;
-  transform: translate( 0px,-90px);
-    -webkit-transform: translate(0px,-90px); /** Chrome & Safari **/
-    -moz-transform: translate(0px,-90px); /** Firefox **/
+  transform: translate( 0px, -22px);
+    -webkit-transform: translate(0px,-22px); /** Chrome & Safari **/
+    -moz-transform: translate(0px, -22px); /** Firefox **/
     
 }
 .btn-link {
@@ -110,34 +110,3 @@ h3 {
 
 }
 
-.App-logo {
-  height: 25px;
-  color: #61DBFB;
-  float: left;
-
-}
-
-.App-header {
-  background-color: #222;
-  height: 70px;
-  padding: 20px;
-  color: white;
-  
-}
-
-.App-title {
-  font-size: 2em;
-  font-family: 'BioRhyme', serif;
-  margin-top: 5px;
-  text-align: left;
-  
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}

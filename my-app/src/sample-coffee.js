@@ -1,5 +1,5 @@
 const coffeeshops = {
-    coffeeshop1: {
+    shop1: {
       name: "Pacific Halibut",
       image: "/images/hali.jpg",
       desc:
@@ -9,7 +9,7 @@ const coffeeshops = {
       status: "24hour"
     },
   
-    coffeeshop2: {
+    shop2: {
       name: "Lobster",
       image: "/images/lobster.jpg",
       desc:
@@ -19,7 +19,7 @@ const coffeeshops = {
       status: "dayhours"
     },
   
-    coffeeshop3: {
+    shop3: {
       name: "Sea Scallops",
       image: "/images/scallops.jpg",
       desc:
@@ -29,7 +29,7 @@ const coffeeshops = {
       status: "dayhours"
     },
   
-    coffeeshop4: {
+    shop4: {
       name: "Mahi Mahi",
       image: "/images/mahi.jpg",
       desc:
@@ -39,7 +39,7 @@ const coffeeshops = {
       status: "dayhours"
     },
   
-    coffeeshop5: {
+    shop5: {
       name: "King Crab",
       image: "/images/crab.jpg",
       desc:
@@ -49,7 +49,7 @@ const coffeeshops = {
       status: "dayhours"
     },
   
-    coffeeshop6: {
+    shop6: {
       name: "Atlantic Salmon",
       image: "/images/salmon.jpg",
       desc:
@@ -59,16 +59,16 @@ const coffeeshops = {
       status: "24hour"
     },
   
-    coffeeshop7: {
+    shop7: {
       name: "Oysters",
       image: "/images/oysters.jpg",
-      desc: "A soft plump oyster with a sweet salty flavor and a clean fincoffeeshop.",
+      desc: "A soft plump oyster with a sweet salty flavor and a clean finshop.",
       rating: 2543,
       location: "available",
       status: "dayhours"
     },
   
-    coffeeshop8: {
+    shop8: {
       name: "Mussels",
       image: "/images/mussels.jpg",
       desc:
@@ -78,7 +78,7 @@ const coffeeshops = {
       status: "dayhours"
     },
   
-    coffeeshop9: {
+    shop9: {
       name: "Jumbo Prawns",
       image: "/images/prawns.jpg",
       desc:
