@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { formatPrice } from "../helpers";
 
-class CoffeeShop extends React.Component {
+
+class Shop extends React.Component {
   static propTypes = {
     details: PropTypes.shape({
       image: PropTypes.string,
@@ -10,7 +10,7 @@ class CoffeeShop extends React.Component {
       desc: PropTypes.string,
       rating: PropTypes.number,
       location: PropTypes.string,
-      status: Proptypes.string
+      status: PropTypes.string
     }),
   };
   render() {
@@ -30,4 +30,4 @@ class CoffeeShop extends React.Component {
   }
 }
 
-export default CoffeeShop;
+export default Shop;
