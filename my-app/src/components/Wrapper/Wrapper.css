@@ -1,11 +1,8 @@
+
 .wrapper {
   min-height: 100%;
-  background:  #f2f2f2 !important;
-  text-align:  center;
-  margin-left: 7.2rem;
-  margin-right: 5rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  width: 90%;
-
+  padding-bottom: 2rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  padding-top: 2rem;
 }

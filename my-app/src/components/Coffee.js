@@ -3,6 +3,7 @@ import Card from "./Card";
 import Alert from "./Alert";
 import Members from "./Members";
 import CardCoffee from "./CardCoffee";
+import Wrapper from "../components/Wrapper";
 // import base from "./base";
 // import AddShopForm from "./AddShopForm";
 // import EditShopForm from "./EditShopForm";
@@ -45,10 +46,12 @@ class Coffee extends React.Component {
   
     render() {
       return (
+        <Wrapper>
+        <h1 className="h1review">Coffee Shop Reviews!</h1>
+        <h3 className="text-center">CodeBrew Thoughts and Preferences</h3>
+        
         <div className="catch-of-the-day">
         <div className="menu">
-        <h1 className="text-center">Coffee Shop Reviews!</h1>
-        <h2 className="text-center">CodeBrew Thoughts and Preferences</h2>
           <ul className="fishes">
             {Object.keys(this.state.coffeeshops).map(key => (
               <Shop
@@ -60,12 +63,12 @@ class Coffee extends React.Component {
             ))}
           </ul>
         </div>
-        <Order coffeeshops={this.state.coffeeshops} order={this.state.order} />
         <Inventory
           addShop={this.addShop}
           loadCoffeeShops={this.loadCoffeeShops}
         />
       </div>
+      </Wrapper>
       );
     }
   }
