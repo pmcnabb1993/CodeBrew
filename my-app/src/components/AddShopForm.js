@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 class AddShopForm extends React.Component {
   nameRef = React.createRef();
@@ -7,20 +8,26 @@ class AddShopForm extends React.Component {
   descRef = React.createRef();
   imageRef = React.createRef();
 
-  createShop = event => {
+  // static propTypes = {
+  //   addShop: PropTypes.func
+  // };
+
+  createShop = (event) => {
     // 1.  stop the form from submitting
     event.preventDefault();
-    const shop = {
-      name: this.nameRef.value.value,
-      rating: this.ratingRef.value.value,
-      location: this.locationRef.value.value,
-      desc: this.descRef.value.value,
-      image: this.imageRef.value.value
-    };
-    this.props.addShop(shop);
-    // refresh the form
-    event.currentTarget.reset();
+    console.log(this.nameRef.value);
+    // const shop = {
+    //   name: this.nameRef.value.value,
+    //   rating: this.ratingRef.value.value,
+    //   location: this.locationRef.value.value,
+    //   desc: this.descRef.value.value,
+    //   image: this.imageRef.value.value
+    // };
+    // this.props.addShop(shop);
+    // // refresh the form
+    // event.currentTarget.reset();
   };
+  
   render() {
     return (
       <form className="fish-edit" onSubmit={this.createShop}>
