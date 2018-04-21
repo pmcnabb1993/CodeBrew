@@ -28,7 +28,7 @@
  .card2 {
 	 position: relative;
 	 background: #ffffff;
-	 max-width: 20rem;
+	 max-width: 30rem;
 	 margin: 7rem auto 2rem;
 	 border: solid 5px rgb(255, 255, 255);
 	 border-radius: 0.4rem;
@@ -39,7 +39,7 @@
 	 top: 0;
 	 left: 50%;
 	 transform: translate(-50%, -50%);
-	 width: 10rem;
+	 width: 12rem;
 	 height: auto;
 	 text-align: center;
 	 margin: 0 auto;
@@ -61,6 +61,7 @@
 }
  .card__link {
 	 color: #222;
+	 font-size: 25px;
 	 border-bottom: solid 2px #fff;
 	 text-decoration: none;
 	 margin-bottom: 0;
@@ -86,8 +87,10 @@
  dt {
 	 font-weight: 900;
 	 margin-bottom: 0.2rem;
+	 font-size: 20px;
 }
  dd {
 	 margin: 0 0 1rem 0;
+	 font-size: 15px;
 }
  

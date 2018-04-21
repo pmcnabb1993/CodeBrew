@@ -50,7 +50,7 @@ class ControlledCarousel extends React.Component {
           <img  alt="900x500" src="https://images.unsplash.com/photo-1516342243255-ac2202f9f149?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=75dacc47b95222986df91d7786c40b25&auto=format&fit=crop&w=1350&q=80" />
           <Carousel.Caption>
             <h1>Submit Your own</h1>
-            <h3>Praesent commodo cursus magna.</h3>
+            <h3>Send us your own review of a coffee shop.</h3>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

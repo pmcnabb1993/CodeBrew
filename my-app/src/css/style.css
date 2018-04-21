@@ -11,7 +11,7 @@ hgroup,
 nav,
 section,
 summary {
-  display: block;
+  display: block; 
 }
 audio,
 canvas,
@@ -265,7 +265,7 @@ ul.order li span.count span {
   width: 33.33%;
   padding: 10px;
   line-height: 1;
-  font-size: 1.2rem;
+  font-size: 20px;
   border: 0;
   border-bottom: 1px solid rgb(165, 165, 165);
   border-right: 1px solid rgb(165, 165, 165);
@@ -301,7 +301,7 @@ ul.order li span.count span {
 }
 .menu-fish {
   border-bottom: 2px solid #777;
-  border-top: 1px solid #777;
+  
   padding-bottom: 2rem;
   padding-top: 2rem;
   margin-bottom: 5px;
@@ -310,10 +310,24 @@ ul.order li span.count span {
 }
 .menu-fish p {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
+.menu-fish h2 {
+  font-size: 20px;
+  color: #ef483e !important;
+
+}
+
+.menu-fish h3 {
+  font-size: 20px;
+  color: #777 !important;
+} 
 .menu-fish .fish-name {
   margin: 0;
+  font-size: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,8 +338,16 @@ ul.order li span.count span {
       -ms-flex-align: center;
           align-items: center;
 }
-.menu-fish .price {
-  font-size: 1.4rem;
+.menu-fish .rating {
+  font-size: 16px;
+  color: #777;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.menu-fish .yelp {
+  font-size: 16px;
+  color: #ef483e;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -335,4 +357,5 @@ ul.order li span.count span {
   width: 350px;
   margin-right: 1rem;
   border: 2px solid #777;
+  margin: 2rem;
 }

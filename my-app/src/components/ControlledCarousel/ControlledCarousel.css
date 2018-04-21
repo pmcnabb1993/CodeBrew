@@ -7,20 +7,21 @@
 
 .carousel-caption {
     color: #ffff;
-    transform: translate( 0px, -460px);
-    -webkit-transform: translate(0px, -460px); /** Chrome & Safari **/
-    -moz-transform: translate(0px, -460px); /** Firefox **/
+    transform: translate( 0px, -480px);
+    -webkit-transform: translate(0px, -480px); /** Chrome & Safari **/
+    -moz-transform: translate(0px, -480px); /** Firefox **/
     
 }
 
 .carousel-caption h1 {
-    font-size: 55px;
+    font-size: 65px;
     color: #fff !important;
     font-family: 'BioRhyme', serif !important;
 }
 
 .carousel-caption h3 {
     color: #fff !important;
+    font-size: 25px;
 }
 
 .carousel-inner {
@@ -29,8 +30,6 @@
     height: 575px !important;
     overflow: hidden !important;
     opacity: .7;
-    transform: translate( 0px,-45px);
-    -webkit-transform: translate(0px,-45px); /** Chrome & Safari **/
-    -moz-transform: translate(0px,-45px); /** Firefox **/
+   
 }
 
