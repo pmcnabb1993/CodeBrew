@@ -4,13 +4,13 @@ import App from './App';
 import Home from './Home/Home';
 import Profile from './Profile/Profile';
 import LoginPage from './LoginPage/LoginPage';
-import Coffee from './Pages/Coffee';
+import Coffee from './components/Coffee';
 import Code from './Pages/Code';
-import Admin from './Admin/Admin';
 import Callback from './Callback/Callback';
 import Auth from './Auth/Auth';
 import history from './history';
 import Ping from './Ping/Ping';
+
 
 const auth = new Auth();
 
@@ -54,16 +54,6 @@ export const makeMainRoutes = () => {
               <Redirect to="/login"/>
             ) : (
               <Code auth={auth} {...props} />
-            )
-          )} />
-
-          
-          
-          <Route path="/admin" render={(props) => (
-            !auth.isAuthenticated() || !auth.userHasScopes(['write:messages']) ? (
-              <Redirect to="/login"/>
-            ) : (
-              <Admin auth={auth} {...props} />
             )
           )} />
           <Route path="/callback" render={(props) => {

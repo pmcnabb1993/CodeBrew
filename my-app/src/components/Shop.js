@@ -1,30 +1,18 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 
 class Shop extends React.Component {
-  static propTypes = {
-    details: PropTypes.shape({
-      image: PropTypes.string,
-      name: PropTypes.string,
-      desc: PropTypes.string,
-      rating: PropTypes.number,
-      location: PropTypes.string,
-      status: PropTypes.string
-    }),
-  };
   render() {
-    const { image, name, desc, rating, location, status } = this.props.details;
+    const { image, name, rating, desc, location } = this.props.details;
     return (
-      <li className="shop-coffee">
+      <li className="menu-fish">
         <img src={image} alt={name} />
-        <h3 className="shop-name">
+        <h3 className="fish-name">
           {name}
           <span className="rating">{rating}</span>
         </h3>
         <p>{desc}</p>
-        <h4>{location}</h4>
-        <h4>{status}</h4>
+        <p>{location}</p>
       </li>
     );
   }

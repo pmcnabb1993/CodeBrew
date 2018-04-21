@@ -50,20 +50,7 @@
   -webkit-transform: translateY(-100%) scale(3);
           transform: translateY(-100%) scale(3);
 }
-@font-face {
-  font-family: "haymakerregular";
-  src: url("./fonts/haymaker-webfont.eot");
-  src: url("./fonts/haymaker-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/haymaker-webfont.woff") format("woff"), url("./fonts/haymaker-webfont.ttf") format("truetype"), url("./fonts/haymaker-webfont.svg#haymakerregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'blanchcaps_inline';
-  src: url("./fonts/blanch_caps_inline-webfont.eot");
-  src: url("./fonts/blanch_caps_inline-webfont.eot?#iefix") format('embedded-opentype'), url("./fonts/blanch_caps_inline-webfont.woff") format('woff'), url("./fonts/blanch_caps_inline-webfont.ttf") format('truetype'), url("./fonts/blanch_caps_inline-webfont.svg#blanchcaps_inline") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+
 article,
 aside,
 details,
@@ -118,13 +105,8 @@ mark {
   background: #ff0;
   color: #000;
 }
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 1em;
-}
+
+
 pre {
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -162,11 +144,7 @@ fieldset {
 button,
 input,
 select,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-  margin: 0;
-}
+
 button,
 input {
   line-height: normal;
@@ -237,28 +215,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
 }
-h1 {
-  font-family: 'blanchcaps_inline', sans-serif;
-  text-align: center;
-  font-weight: normal;
-  margin: 0;
-}
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
-  font-family: 'haymakerregular', sans-serif;
-}
-h2 {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 2rem;
-}
-h3 {
-  font-size: 3rem;
-}
+
 header.top {
   text-align: center;
 }

@@ -1,11 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
-import firebase from "firebase";
 import AddShopForm from "./AddShopForm";
-import EditShopForm from "./EditShopForm";
-import Login from "./Login";
-import base, { firebaseApp } from "../base";
-import samplecoffee from "../sample-coffee";
+
 
 class Inventory extends React.Component {
   render() {
@@ -13,7 +8,7 @@ class Inventory extends React.Component {
       <div className="inventory">
         <h2>Inventory</h2>
         <AddShopForm addShop={this.props.addShop} />
-        <button onClick={this.props.loadSamplecoffeeshops}>
+        <button onClick={this.props.loadCoffeeShops}>
           Reload Coffee Shops
         </button>
       </div>

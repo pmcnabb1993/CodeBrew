@@ -5,8 +5,7 @@ const coffeeshops = {
       desc:
         "Everyones favorite white fish. We will cut it to the size you need and ship it.",
       rating: 1724,
-      location: "available",
-      status: "24hour"
+      location: "available"
     },
   
     shop2: {
@@ -15,8 +14,8 @@ const coffeeshops = {
       desc:
         "These tender, mouth-watering beauties are a fantastic hit at any dinner party.",
       rating: 3200,
-      location: "available",
-      status: "dayhours"
+      location: "available"
+      
     },
   
     shop3: {
@@ -25,8 +24,8 @@ const coffeeshops = {
       desc:
         "Big, sweet and tender. True dry-pack scallops from the icey waters of Alaska. About 8-10 per pound",
       rating: 1684,
-      location: "unavailable",
-      status: "dayhours"
+      location: "unavailable"
+      
     },
   
     shop4: {
@@ -35,8 +34,8 @@ const coffeeshops = {
       desc:
         "Lean flesh with a mild, sweet flavor profile, moderately firm texture and large, moist flakes. ",
       rating: 1129,
-      location: "available",
-      status: "dayhours"
+      location: "available"
+      
     },
   
     shop5: {
@@ -45,8 +44,8 @@ const coffeeshops = {
       desc:
         "Crack these open and enjoy them plain or with one of our cocktail sauces",
       rating: 4234,
-      location: "available",
-      status: "dayhours"
+      location: "available"
+      
     },
   
     shop6: {
@@ -55,8 +54,8 @@ const coffeeshops = {
       desc:
         "This flaky, oily salmon is truly the king of the sea. Bake it, grill it, broil it...as good as it gets!",
       rating: 1453,
-      location: "available",
-      status: "24hour"
+      location: "available"
+      
     },
   
     shop7: {
@@ -64,8 +63,8 @@ const coffeeshops = {
       image: "/images/oysters.jpg",
       desc: "A soft plump oyster with a sweet salty flavor and a clean finshop.",
       rating: 2543,
-      location: "available",
-      status: "dayhours"
+      location: "available"
+      
     },
   
     shop8: {
@@ -74,8 +73,8 @@ const coffeeshops = {
       desc:
         "The best mussels from the Pacific Northwest with a full-flavored and complex taste.",
       rating: 425,
-      location: "available",
-      status: "dayhours"
+      location: "available"
+      
     },
   
     shop9: {
@@ -84,8 +83,8 @@ const coffeeshops = {
       desc:
         "With 21-25 two bite prawns in each pound, these sweet morsels are perfect for shish-kabobs.",
       rating: 2250,
-      location: "available",
-      status: "dayhours"
+      location: "available"
+      
     }
   };
   

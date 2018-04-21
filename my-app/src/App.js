@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Button, Nav, NavItem } from 'react-bootstrap';
 import './App.css';
-import Coffee from './Pages/Coffee';
+import Coffee from './components/Coffee';
 import Weather from "./components/Weather"; 
 import base from './base';
 import Card from "./components/Card";
@@ -18,7 +18,6 @@ import Inventory from "./components/Inventory";
 
 
 class App extends React.Component {
-
 
   goTo(route) {
     this.props.history.replace(`/${route}`)

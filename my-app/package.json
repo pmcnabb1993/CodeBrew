@@ -35,7 +35,7 @@
     "serve": "^6.5.0"
   },
   "scripts": {
-    "start": "npm-run-all --parallel server:start client:start",
+    "start": "react-scripts start",
     "client:start": "react-scripts start",
     "server:start": "node server.js",
     "build": "react-scripts build",
