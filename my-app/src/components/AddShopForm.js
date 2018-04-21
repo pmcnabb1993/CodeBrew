@@ -8,6 +8,9 @@ class AddShopForm extends React.Component {
   locationRef = React.createRef();
   descRef = React.createRef();
   imageRef = React.createRef();
+  goodRef = React.createRef();
+  badRef = React.createRef();
+  yelpRef = React.createRef();
 
   static propTypes = {
      addShop: PropTypes.func
@@ -22,7 +25,10 @@ class AddShopForm extends React.Component {
        rating: this.ratingRef.value.value,
        location: this.locationRef.value.value,
        desc: this.descRef.value.value,
-       image: this.imageRef.value.value
+       image: this.imageRef.value.value,
+       good: this.goodRef.value.value,
+       bad: this.badRef.value.value,
+       yelp: this.yelpRef.value.value
      };
      this.props.addShop(shop);
      // refresh the form
@@ -32,21 +38,29 @@ class AddShopForm extends React.Component {
   render() {
     return (
       <Form className="fish-edit" onSubmit={this.createShop}>
-        <input name="name" ref={this.nameRef} type="text" placeholder="Name" />
-        <input
+        <textarea name="name" ref={this.nameRef} type="text" placeholder="Name" />
+        <textarea
           name="rating"
           ref={this.ratingRef}
           type="text"
           placeholder="Rating 1-5"
         />
+        <textarea
+          name="yelp"
+          ref={this.yelpRef}
+          type="text"
+          placeholder="Yelp Score"
+        />
         <textarea name="desc" ref={this.descRef} placeholder="Description" />
-        <input
+        <textarea name="good" ref={this.goodRef} placeholder="The Good" />
+        <textarea name="bad" ref={this.badRef} placeholder="The Bad" />
+        <textarea
           name="image"
           ref={this.imageRef}
           type="text"
           placeholder="Image"
         />
-        <input
+        <textarea
           name="location"
           ref={this.locationRef}
           type="text"

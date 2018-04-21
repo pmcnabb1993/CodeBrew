@@ -67,6 +67,10 @@ h3 {
 
 .navbar-header {
   margin-left: 5px !important;
+  transform: translate( -220px, 20px);
+    -webkit-transform: translate(-220px,20px); /* Chrome & Safari */
+    -moz-transform: translate(-220px, 20px); /** Firefox **/
+  
 }
 .navbar-brand {
   color: #222;
@@ -74,6 +78,7 @@ h3 {
   padding-top: 22px !important;
   float: left !important;
   margin-right: 30px;
+ 
   
 }
 
@@ -81,13 +86,15 @@ h3 {
   margin-top: 6px;
   margin-bottom: 5px;
   margin-right: 30px;
+  
 }
 
 .navbar-right {
   margin-top: 4px !important;
-  transform: translate( 50px, -22px);
-    /*-webkit-transform: translate(50px,-22px); * Chrome & Safari *
-    -moz-transform: translate(50px, -22px); /** Firefox **/
+  transform: translate( 250px, -28px);
+    -webkit-transform: translate(250px,-28px); /* Chrome & Safari */
+    -moz-transform: translate(250px, -28px); /** Firefox **/
+  
     
 }
 .btn-link {
@@ -98,6 +105,10 @@ h3 {
   padding-left: 12px;
   padding-top: 24px !important;
   font-size: 16px !important;
+  transform: translate( 0, 12px);
+    -webkit-transform: translate(0,12px); /* Chrome & Safari */
+    -moz-transform: translate(0, 12px); /** Firefox **/
+  
 }
 
 .btn-link:hover {
