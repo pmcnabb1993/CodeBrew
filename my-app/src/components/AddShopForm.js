@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Button, Form  } from 'react-bootstrap';
 
 class AddShopForm extends React.Component {
   nameRef = React.createRef();
@@ -8,29 +9,29 @@ class AddShopForm extends React.Component {
   descRef = React.createRef();
   imageRef = React.createRef();
 
-  // static propTypes = {
-  //   addShop: PropTypes.func
-  // };
+  static propTypes = {
+     addShop: PropTypes.func
+   };
 
   createShop = (event) => {
     // 1.  stop the form from submitting
     event.preventDefault();
     console.log(this.nameRef.value);
-    // const shop = {
-    //   name: this.nameRef.value.value,
-    //   rating: this.ratingRef.value.value,
-    //   location: this.locationRef.value.value,
-    //   desc: this.descRef.value.value,
-    //   image: this.imageRef.value.value
-    // };
-    // this.props.addShop(shop);
-    // // refresh the form
-    // event.currentTarget.reset();
+     const shop = {
+       name: this.nameRef.value.value,
+       rating: this.ratingRef.value.value,
+       location: this.locationRef.value.value,
+       desc: this.descRef.value.value,
+       image: this.imageRef.value.value
+     };
+     this.props.addShop(shop);
+     // refresh the form
+     event.currentTarget.reset();
   };
   
   render() {
     return (
-      <form className="fish-edit" onSubmit={this.createShop}>
+      <Form className="fish-edit" onSubmit={this.createShop}>
         <input name="name" ref={this.nameRef} type="text" placeholder="Name" />
         <input
           name="rating"
@@ -51,8 +52,8 @@ class AddShopForm extends React.Component {
           type="text"
           placeholder="Location"
         />
-        <button type="submit">+ Add Coffee Shop</button>
-      </form>
+        <Button type="submit">+ Add Coffee Shop</Button>
+      </Form>
     );
   }
 }

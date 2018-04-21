@@ -9,10 +9,9 @@ div[data-reactroot] {
   height: 100%;
   padding: 0;
   margin: 0;
-  
-  
+  max-width: 100%;
+  overflow-x: hidden;
 }
-
 
 body {
   background-color: #f2f2f2 !important;
@@ -86,9 +85,9 @@ h3 {
 
 .navbar-right {
   margin-top: 4px !important;
-  transform: translate( 0px, -22px);
-    -webkit-transform: translate(0px,-22px); /** Chrome & Safari **/
-    -moz-transform: translate(0px, -22px); /** Firefox **/
+  transform: translate( 50px, -22px);
+    /*-webkit-transform: translate(50px,-22px); * Chrome & Safari *
+    -moz-transform: translate(50px, -22px); /** Firefox **/
     
 }
 .btn-link {

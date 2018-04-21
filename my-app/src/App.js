@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Button, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Button, Nav, NavItem, NavbarHeader, NavbarBrand } from 'react-bootstrap';
 import './App.css';
 import Coffee from './components/Coffee';
 import Weather from "./components/Weather"; 

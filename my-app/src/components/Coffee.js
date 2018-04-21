@@ -13,6 +13,7 @@ import Order from "./Order";
 import Inventory from "./Inventory";
 import samplecoffee from "../sample-coffee";
 import Shop from "./Shop";
+import axios from "axios";
 
 
 class Coffee extends React.Component {
@@ -49,7 +50,12 @@ class Coffee extends React.Component {
         <Wrapper>
         <h1 className="h1review">Coffee Shop Reviews!</h1>
         <h3 className="text-center">CodeBrew Thoughts and Preferences</h3>
-        
+        <div>
+        <Inventory
+          addShop={this.addShop}
+          loadCoffeeShops={this.loadCoffeeShops}
+        />
+        </div>
         <div className="catch-of-the-day">
         <div className="menu">
           <ul className="fishes">
@@ -63,10 +69,6 @@ class Coffee extends React.Component {
             ))}
           </ul>
         </div>
-        <Inventory
-          addShop={this.addShop}
-          loadCoffeeShops={this.loadCoffeeShops}
-        />
       </div>
       </Wrapper>
       );

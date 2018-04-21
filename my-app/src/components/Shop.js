@@ -1,6 +1,8 @@
 import React from "react";
 
 
+
+
 class Shop extends React.Component {
   render() {
     const { image, name, rating, desc, location } = this.props.details;
