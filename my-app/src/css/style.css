@@ -25,11 +25,7 @@ audio:not([controls]) {
 [hidden] {
   display: none;
 }
-html {
-  font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
+
 a:focus {
   outline: thin dotted;
 }
@@ -53,7 +49,7 @@ dfn {
 }
 mark {
   background: #ff0;
-  color: #000;
+  color: #777;
 }
 
 
@@ -70,7 +66,7 @@ small {
 sub,
 sup {
   font-size: 75%;
-  line-height: 0;
+  line-height: 0; width
   position: relative;
   vertical-align: baseline;
 }
@@ -168,17 +164,10 @@ body {
 
 
 .catch-of-the-day {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 90vh;
-  max-width: 1500px;
   margin: 0 auto;
   margin-top: 5vh;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
 }
 .catch-of-the-day > * {
   -webkit-box-flex: 1;
@@ -205,7 +194,7 @@ input#fold {
 }
 input#fold:checked + label {
   background: #fff;
-  color: #000;
+  color: #777;
 }
 ul {
   list-style: none;
@@ -213,7 +202,7 @@ ul {
   padding: 0;
 }
 ul.order li {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #777;
   padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,8 +226,8 @@ ul.order li button {
 }
 ul.order li.total {
   font-weight: 600;
-  border-bottom: 3px solid #000;
-  border-top: 3px double #000;
+  border-bottom: 3px solid #777;
+  border-top: 3px double #777;
 }
 ul.order li.unavailable {
   text-decoration: line-through;
@@ -259,8 +248,9 @@ ul.order li span.count span {
   text-align: center;
 }
 .fish-edit {
+  width: 500px;
   margin-bottom: 20px;
-  border: 2px solid #000;
+  border: 2px solid #ef483e;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -269,6 +259,7 @@ ul.order li span.count span {
       flex-wrap: wrap;
 }
 .fish-edit input,
+.fish-edit rating,
 .fish-edit textarea,
 .fish-edit select {
   width: 33.33%;
@@ -276,8 +267,8 @@ ul.order li span.count span {
   line-height: 1;
   font-size: 1.2rem;
   border: 0;
-  border-bottom: 1px solid #000;
-  border-right: 1px solid #000;
+  border-bottom: 1px solid rgb(165, 165, 165);
+  border-right: 1px solid rgb(165, 165, 165);
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -288,7 +279,7 @@ ul.order li span.count span {
 .fish-edit textarea:focus,
 .fish-edit select:focus {
   outline: 0;
-  background: #fef2de;
+  background: #f2f2f2;
 }
 .fish-edit textarea {
   width: 100%;
@@ -301,16 +292,16 @@ ul.order li span.count span {
   border: 0;
 }
 .list-of-fish {
-  border-top: 2px solid #000;
-  border-bottom: 1px solid #000;
+  border-top: 2px solid #777;
+  border-bottom: 1px solid #777;
   padding-top: 5px;
   margin-top: 2rem;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
 .menu-fish {
-  border-bottom: 2px solid #000;
-  border-top: 1px solid #000;
+  border-bottom: 2px solid #777;
+  border-top: 1px solid #777;
   padding-bottom: 2rem;
   padding-top: 2rem;
   margin-bottom: 5px;
@@ -341,6 +332,7 @@ ul.order li span.count span {
 }
 .menu-fish img {
   float: left;
-  width: 150px;
+  width: 350px;
   margin-right: 1rem;
+  border: 2px solid #777;
 }

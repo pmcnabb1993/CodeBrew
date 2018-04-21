@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom';
-import './index.css';
+import { render } from "react-dom";
+import './index.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import { makeMainRoutes } from './routes';
 import "./css/style.css";
